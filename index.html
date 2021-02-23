@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Undangan pernikahan</title>
+    <link rel="stylesheet" href="./undangan.css">
+</head>
+<body>
+    
+    <section class="sec1">
+        <div class="dek1"></div>
+        <div class="dek2"></div>
+        <div class="dek3"></div>
+        <div class="pages">
+            <h1 class="animate__animated animate__swing animate__delay-1s">Avelia & Georgio</h1>
+            <p>On the 21<sup>th</sup>of Friday 2021</p>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="wrap-bingkai">
+            <div class="dekor"></div>
+            <div class="dekor2"></div>
+            <h1 class="gett">We are getting merried</h1>
+            <div class="wrap-img">
+                <div class="img2">
+                    <h2>Georgio</h2>
+                    <p>son of Johan thomas bin reffansa</p>
+                </div>
+                <div class="love"><h1 style="font-family: 'Satisfy', sans-serif;font-size: 80px;"><i class="la la-heart"></i></h1></div>
+                <div class="img1">
+                    <h2>Avelia</h2>
+                    <p>daughter of thomas bin ferdy</p>
+                </div>
+            </div>  
+            <div class="bingkai bk1"></div>
+            <div class="bingkai bk2"></div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="img-left">
+            <h1>Event details</h1>
+            <h4>Saturday <br> October 19<sup>th</sup>.2021</h4>
+            <div class="names">
+               <div>
+                   <h3>Georgio</h3>
+                   <small>son of benson bin remy</small>
+               </div>
+               <div>
+                   <h3>Avelia</h3>
+                   <small>daughter of thomas bin ferdy</small>
+               </div>
+            </div>
+            <p>
+                The Chapel of Love
+                <br>
+                123 Broadhurt Avenue, Gladstone
+            </p>
+            <a href="#footer"><button class="btn btn-map">Location of desire</button></a>
+        </div>
+        <div class="dekor3"></div>
+        <div class="dekor4"></div>
+    </section>
+
+    <section class="sec4">
+        <div class="wrap-footer">
+            <div class="child-footer">
+                <div class="dekPlus dk1"></div>
+                <div class="dekPlus dk3"></div>
+                <div class="dekPlus dk2"></div>
+                <p>
+                   Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkanan
+                   hadir untuk memberikan do'a restu kepada kedua memepelai.
+                    <br>
+                    <br>
+                   Atas kehadiran dan do'a restu Bapak/Ibu/Saudara/i kami ucapakan terima kasih.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sec5">
+        <div class="wrap-footer2">
+            <div class="footer">
+                <div class="footer-text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum asperiores architecto incidunt error quaerat minus, expedita iure id quisquam! Veniam enim ratione ad, asperiores repellat et tenetur error id repudiandae!</p>
+                </div>
+                <div class="footer-map">
+                    <iframe id="footer"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14597.432386106555!2d151.23921212732722!3d-23.84141462597587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bc27489ada17a29%3A0x500eef17f210e60!2sGladstone%20Queensland%204680%2C%20Australia!5e0!3m2!1sid!2sid!4v1613984252642!5m2!1sid!2sid"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./vanilla-tilt.js"></script>
+    <script>
+       window.addEventListener('scroll', () => {
+           console.log(this.pageYOffset)
+           if(this.pageYOffset >= 470) {
+                document.querySelector('.dekor').classList.add('dekorShow')
+                document.querySelector('.dekor2').classList.add('dekorShow')
+            }else if(this.pageYOffset <= 470) {  
+                document.querySelector('.dekor2').classList.remove('dekorShow')
+                document.querySelector('.dekor').classList.remove('dekorShow')
+           }
+           if(this.pageYOffset >= 1300) {
+                document.querySelector('.bingkai').classList.add('bingkaiShow')
+            }else if(this.pageYOffset <= 1300) {  
+                document.querySelector('.bingkai').classList.remove('bingkaiShow')
+           }
+           if(this.pageYOffset >= 2200) {
+                document.querySelector('.dk1').classList.add('dekShow1')
+                document.querySelector('.dk2').classList.add('dekShow1')
+                document.querySelector('.dk3').classList.add('dekShow')
+            }else if(this.pageYOffset <= 2200) {  
+                document.querySelector('.dk1').classList.remove('dekShow1')
+                document.querySelector('.dk2').classList.remove('dekShow1')
+                document.querySelector('.dk3').classList.remove('dekShow')
+           }
+       })
+    </script>
+</body>
+</html>
