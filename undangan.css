@@ -43,6 +43,7 @@ section {
 .sec4 {
     position: relative;
     height: 600px;
+    background-color: rgb(243, 243, 243);
     overflow: hidden;
 }
 
