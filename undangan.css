@@ -628,7 +628,7 @@ section {
     }
 
     .dekor, .dekor2 {
-        margin-top: -150px;
+        margin-top: -180px;
         opacity: 1;
     }
 
@@ -703,7 +703,7 @@ section {
         
     .sec2 {
         background-color: #fff;
-        height: 154vh;
+        height: 152vh;
         display: block;
         position: relative;
         overflow: hidden;
