@@ -18,6 +18,8 @@
         <div class="dek2"></div>
         <div class="dek3"></div>
         <div class="pages">
+            <div class="pages2" loading=”lazy”>
+            </div>
             <h1 class="animate__animated animate__swing animate__delay-1s">Avelia & Georgio</h1>
             <p>On the 21<sup>th</sup>of Friday 2021</p>
         </div>
@@ -70,9 +72,9 @@
     <section class="sec4">
         <div class="wrap-footer">
             <div class="child-footer">
-                <div class="dekPlus dk1"></div>
-                <div class="dekPlus dk3"></div>
-                <div class="dekPlus dk2"></div>
+                <div class="dekPlus dk1" loading="lazy"></div>
+                <div class="dekPlus dk3" loading="lazy"></div>
+                <div class="dekPlus dk2" loading="lazy"></div>
                 <p>
                    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkanan
                    hadir untuk memberikan do'a restu kepada kedua memepelai.
@@ -87,11 +89,11 @@
     <section class="sec5">
         <div class="wrap-footer2">
             <div class="footer">
-                <div class="footer-text">
+                <div class="footer-text" style="text-align: center;">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum asperiores architecto incidunt error quaerat minus, expedita iure id quisquam! Veniam enim ratione ad, asperiores repellat et tenetur error id repudiandae!</p>
                 </div>
                 <div class="footer-map">
-                    <iframe id="footer"
+                    <iframe id="footer" loading=”lazy”
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14597.432386106555!2d151.23921212732722!3d-23.84141462597587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bc27489ada17a29%3A0x500eef17f210e60!2sGladstone%20Queensland%204680%2C%20Australia!5e0!3m2!1sid!2sid!4v1613984252642!5m2!1sid!2sid"
                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
@@ -101,21 +103,23 @@
 
     <script src="./vanilla-tilt.js"></script>
     <script>
-       window.addEventListener('scroll', () => {
-           if(this.pageYOffset >= 470) {
-                document.querySelector('.dekor').classList.add('dekorShow')
+        if(window.innerWidth >= 1100) {
+
+            window.addEventListener('scroll', () => {
+                if(this.pageYOffset >= 470) {
+                    document.querySelector('.dekor').classList.add('dekorShow')
                 document.querySelector('.dekor2').classList.add('dekorShow')
             }else if(this.pageYOffset <= 470) {  
                 document.querySelector('.dekor2').classList.remove('dekorShow')
                 document.querySelector('.dekor').classList.remove('dekorShow')
            }
            if(this.pageYOffset >= 1300) {
-                document.querySelector('.bingkai').classList.add('bingkaiShow')
+               document.querySelector('.bingkai').classList.add('bingkaiShow')
             }else if(this.pageYOffset <= 1300) {  
                 document.querySelector('.bingkai').classList.remove('bingkaiShow')
-           }
+            }
            if(this.pageYOffset >= 2200) {
-                document.querySelector('.dk1').classList.add('dekShow1')
+               document.querySelector('.dk1').classList.add('dekShow1')
                 document.querySelector('.dk2').classList.add('dekShow1')
                 document.querySelector('.dk3').classList.add('dekShow')
             }else if(this.pageYOffset <= 2200) {  
@@ -124,6 +128,7 @@
                 document.querySelector('.dk3').classList.remove('dekShow')
            }
        })
+    }
     </script>
 </body>
 </html>
