@@ -483,7 +483,7 @@ section {
         bottom: -120px;
         margin: auto;
         z-index: 2;
-        background-attachment: unset;
+        background-attachment:local;
         height: 90vh;
         border-radius: 10px;
         background-size: cover;
@@ -529,7 +529,8 @@ section {
     }
 
     .dekor, .dekor2 {
-        display: none;
+        margin-top: -150px;
+        opacity: 1;
     }
 
     .wrap-img h2, .wrap-img p {
@@ -626,6 +627,16 @@ section {
         align-items: center;
         background-color: #fff;
     }
+        
+    .bingkai {
+        height: 400px;
+        margin-top: 0px;
+        opacity: 1;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.4s ease-in;
+    }
 
     .img-left {
         position: relative;
@@ -675,7 +686,13 @@ section {
         font-weight: 500;
         font-size: 20px;
         width: 93vw;
+        text-align: center;
         margin: auto;
+    }
+
+    .footer p {
+        margin-top: 20px;
+        text-align: center;
     }
         
     .wrap-footer2 {
@@ -692,8 +709,22 @@ section {
         align-items: center;
     }
 
+    .footer-text {
+        text-align: center;
+    }
+
+    iframe {
+        width: 100vw;
+    }
+   
+    .dk1, .dk2, .dk3{
+        bottom: -200px;
+        opacity: 1;
+    }
+
     .footer div {
         width: 100vw;
+        text-align: center;
         height: max-content;
         background-color: rgb(7, 7, 7);
     }
